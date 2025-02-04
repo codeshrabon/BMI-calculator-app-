@@ -25,14 +25,14 @@ public class BMICalculator {
     // Imperial system
     public double calculateBmiImperial(double weight, double height) {
 
-        return  (703 * weightImperialInPounds) / heightImperialInInches;
+        return  (703 * weightImperialInPounds) / Math.pow(heightImperialInInches, 2);
         
     }
 
     // Please implement the calculateBmiMetric() method to take in weight
     // and height to calculate and return the BMI value in the Metric system
     public double calculateBmiMetric(double weightMetricInKilos, double heightMetricInMeters) {
-        return weightMetricInKilos / (heightMetricInMeters * heightMetricInMeters);
+        return weightMetricInKilos / Math.pow(heightMetricInMeters,2);
         
     }
 
